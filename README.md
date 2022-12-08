@@ -16,10 +16,16 @@ O desde GitHub desktop.
 
 Los siguientes comandos tienen la `i` que es `install` en npm.
 
-Instalar los modulos de node.
+Instalar los módulos de node.
 
 ```
 npm i
+```
+
+En caso de que tenga advertencias en el proceso de instalacón de los módulos ejecute `npm audit` si tiene mas de 0 vulneravilidades, ejecute:
+
+```
+npm audit fix
 ```
 
 Instalar GraphQL y Apollo.
@@ -38,6 +44,12 @@ Intalar los decoradores para las validaciones.
 
 ```
 npm i --save class-validator class-transformer
+```
+
+Intalar el módulo de testing, esto es por las actualizaciones que se han hecho despues del curso.
+
+```
+npm i --save-dev @nestjs/testing
 ```
 
 ## Usar el proyecto
