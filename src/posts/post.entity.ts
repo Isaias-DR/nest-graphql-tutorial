@@ -24,7 +24,7 @@ export class Post {
   @Column({ type: 'text', nullable: true })
   @Field({ nullable: true })
   content?: string
-  
+
   @Column()
   @Field(() => Int)
   authorId: number

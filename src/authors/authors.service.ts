@@ -12,7 +12,7 @@ export class AuthorsService {
 
   }
 
-  create(createAuthorInput: CreateAuthorInput): Promise<Author>  {
+  create(createAuthorInput: CreateAuthorInput): Promise<Author> {
     // return 'This action adds a new author';
 
     const author = this.authorRepository.create(createAuthorInput);

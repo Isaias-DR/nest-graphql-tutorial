@@ -6,7 +6,7 @@ import { UpdateAuthorInput } from './dto/update-author.input';
 
 @Resolver(() => Author)
 export class AuthorsResolver {
-  constructor(private readonly authorsService: AuthorsService) {}
+  constructor(private readonly authorsService: AuthorsService) { }
 
   @Mutation(() => Author)
   createAuthor(@Args('createAuthorInput') createAuthorInput: CreateAuthorInput) {

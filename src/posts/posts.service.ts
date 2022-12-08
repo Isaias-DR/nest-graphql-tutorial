@@ -47,7 +47,7 @@ export class PostsService {
   }
 
   getAuthor(userId: number): Promise<Author> {
-    
+
     return this.authorsService.findOne(userId);
   }
 }

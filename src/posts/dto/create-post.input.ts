@@ -8,14 +8,14 @@ export class CreatePostInput {
     message: 'Title is too short'
   })
   @MaxLength(100, {
-    message: 'Title is too long'    
+    message: 'Title is too long'
   })
   @IsNotEmpty({
     message: 'Title is required'
   })
   @Field()
   title: string;
-  
+
   @MaxLength(400)
   @Field({ nullable: true })
   content?: string;
